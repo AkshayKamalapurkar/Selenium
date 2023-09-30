@@ -17,5 +17,6 @@ public class Test_HomePage {
 		InitiateBrowser.initialiseBrowserAndPassData(driver);
 		hm.verifyMenuItems();
 		hm.verifyChildWindows();
+		//checking again
 	}
 }
