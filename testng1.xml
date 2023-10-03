@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" parallel="methods" name="Suite">
+	<listeners>
+		<listener class-name="core.utils.ExtentReportManager"></listener>
+	</listeners>
+
+	<listeners>
+		<listener class-name="core.utils.MyTransform"></listener>
+	</listeners>
+
+	<test thread-count="5" parallel="methods" name="Test">
+		<classes>
+			<!-- <class name="com.testscripts.Test_HomePage" />
+			<class name="com.testscripts.StaleElemenetException" /> -->
+			<class name="com.testscripts.Runner" />
+			<!-- <class name="com.testscripts.SendKeyswithoutsendKeys" />
+			<class name="com.testscripts.GetNavigate" /> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

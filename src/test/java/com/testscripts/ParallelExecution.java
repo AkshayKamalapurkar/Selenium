@@ -1,6 +1,7 @@
 package com.testscripts;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import core.utils.DataProviderExample;
 
