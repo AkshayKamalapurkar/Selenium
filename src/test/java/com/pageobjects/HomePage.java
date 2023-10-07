@@ -21,7 +21,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.base.Function;
 
-public class HomePage {
+public class HomePage extends BasePage{
 	public WebDriver driver;
 
 	public HomePage(WebDriver driver) {
@@ -32,6 +32,10 @@ public class HomePage {
 	@FindBy(xpath = "//a[@class=\"logo\"]")
 	@CacheLookup
 	public WebElement storeLogo;
+	
+	@FindBy(xpath="//a[normalize-space()='Sign In'])[1]")
+	@CacheLookup
+	public WebElement btnSignIn;
 
 	// nav[@class='navigation']
 	// nav[@data-action="navigation"]/ul/li/a
@@ -87,10 +91,15 @@ public class HomePage {
 		});
 
 	}
-//	public void tryagain()
-//	{
-//		WebElement useful = BasePage.findElement(storeLogo);
-//	}
+	
+	
+	public void testOverridedFindElement()
+	{
+		
+//		WebElement ele = WaitAndfindElement(btnSignIn);
+//		System.out.println(ele.getText());
+		
+	}
 
 	
 }

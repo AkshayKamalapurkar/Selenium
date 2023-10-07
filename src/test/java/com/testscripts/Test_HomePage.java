@@ -16,6 +16,7 @@ public class Test_HomePage {
 	public void Tc_01() throws Exception
 	{
 		InitiateBrowser.initialiseBrowserAndPassData(driver);
+		hm.testOverridedFindElement();
 		hm.verifyMenuItems();
 		hm.verifyChildWindows();
 		//checking again

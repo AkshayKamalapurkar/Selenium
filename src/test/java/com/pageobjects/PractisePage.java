@@ -5,7 +5,10 @@ import java.util.*;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebDriver.Window;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
@@ -167,6 +170,8 @@ public class PractisePage {
 	public void selectClassExample() {
 		Select sel = new Select(selectClassExample);
 		sel.selectByValue("honda");
+		//sel.selectByIndex(0);
+		//sel.selectByVisibleText(null);
 	}
 
 	public void selectAlertExample() {

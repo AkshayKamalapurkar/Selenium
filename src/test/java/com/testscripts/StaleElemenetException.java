@@ -2,6 +2,7 @@ package com.testscripts;
 
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 import com.pageobjects.Lambdatest;
@@ -15,6 +16,8 @@ public class StaleElemenetException {
 	@Test
 	public void practiseMultipleMethodsinSelenium() throws Exception {
 		InitiateBrowser.initialiseBrowserAndPassData1(driver);
+		
+		
 		lld.generateStaleElement();
 	
 	}

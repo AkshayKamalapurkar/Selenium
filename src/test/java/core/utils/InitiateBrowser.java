@@ -37,4 +37,16 @@ public class InitiateBrowser {
 	      driver.get(value);
 	    
 	}
+	public static void initialiseBrowserAndPassData2(WebDriver driver) throws Exception {
+		Map<String, Map<String, String>> excel = ReadExcel2Test.readExcelSheet();
+		 String value = excel.get("3").get("Url").toString();
+	      driver.get(value);
+	    
+	}
+	public static void initialiseBrowserAndPassData4(WebDriver driver) throws Exception {
+		Map<String, Map<String, String>> excel = ReadExcel2Test.readExcelSheet();
+		 String value = excel.get("4").get("Url").toString();
+	      driver.get(value);
+	    
+	}
 }
