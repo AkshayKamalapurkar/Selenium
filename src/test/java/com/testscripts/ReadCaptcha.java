@@ -39,7 +39,7 @@ public class ReadCaptcha {
 		ITesseract image = new Tesseract();
 		String irctPage = image.doOCR(new File(path));
 		System.out.println(irctPage);
-		
+		//hello how are you feature branch
 		
 		
 		
